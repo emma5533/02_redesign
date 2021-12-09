@@ -6,9 +6,7 @@
 
 img {
   display: block;
-
-  width: 100%;
-
+  max-width: 100%;
   height: auto;
 }
 /*main grid*/
@@ -16,8 +14,6 @@ main {
   display: grid;
 
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-
-  margin-inline: 50px;
 }
 main section {
   grid-column: 2/3;
