@@ -14,15 +14,6 @@
   grid-column: 2/3;
 }
 
-.contact {
-  display: grid;
-  grid-column: 1/3;
-}
-
-.form_felt {
-  display: grid;
-}
-
 /*media query*/
 @media (min-width: 600px) {
   .section_grid {
@@ -65,5 +56,51 @@
 
   .text_4 {
     grid-row: 4/5;
+  }
+
+  /*formular layout*/
+  .contact {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 3rem;
+  }
+
+  .form_felt {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    display: grid;
+    grid-column: 2/5;
+  }
+
+  .form_felt input {
+    border: black 2px solid;
+    padding: 5px;
+
+    font-family: roboto-mono, monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  button {
+    grid-column: 2/5;
+    margin-top: 10px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: #a5845a;
+  }
+
+  button:hover {
+    background: #a5845a;
+    color: white;
   }
 }

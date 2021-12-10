@@ -10,7 +10,23 @@
     <title>Lagoni Redesign</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="udlejning.html">UDLEJNING</a></li>
+          <li><a href="omos.html">OM OS</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+
+      <button class="toggle_knap">
+        <img class="knap kryds" src="./img/kryds.svg" alt="kryds" />
+        <img class="knap menu" src="./img/menu.svg" alt="menu" />
+      </button>
+    </header>
+
     <main>
       <section class="section_1">
         <h1>UDLEJNING</h1>
@@ -79,47 +95,49 @@
             vores pop-up mini café.
           </p>
         </div>
+        </section>
+
         <form class="contact" name="contact" netlify>
           <div class="form_felt">
             <label for="navn">NAVN</label>
-            <input type="text" id="navn" />
+            <input placeholder="Her skriver du navn og efternavn.." type="text" id="navn" />
           </div>
 
           <div class="form_felt">
             <label for="mail">E-MAIL</label>
-            <input type="email" id="mail" />
+            <input placeholder="Her skriver du din e-mail.."type="email" id="mail" />
           </div>
 
           <div class="form_felt">
             <label for="dato">DATO DD.MM.YY</label>
-            <input type="decimal" id="dato" />
+            <input placeholder="F.eks. 28.12.22"type="decimal" id="dato" />
           </div>
 
           <div class="form_felt">
             <label for="tidsrum">CA. TIDSRUM 00.00 - 00.00 </label>
-            <input type="decimal" id="tidsrum" />
+            <input placeholder="F.eks. 15.00 - 18.30"type="decimal" id="tidsrum" />
           </div>
 
-          <div class="form-felt">
+          <div class="form_felt">
             <label for="adresse">ADRESSE</label>
-            <input type="text" id="adresse" />
+            <input placeholder="Her skriver du adresse og postnummer.."type="text" id="adresse" />
           </div>
 
-          <div class="form-felt">
+          <div class="form_felt">
             <label for="anledning">ANLEDNING</label>
-            <input type="text" id="anledning" />
+            <input placeholder="I hvilken anledning afholdes arrangementet?"type="text" id="anledning" />
           </div>
 
-          <div class="form-felt">
+          <div class="form_felt">
             <label for="antal">CA. ANTAL PERSONER</label>
-            <input type="tel" id="antal" />
+            <input placeholder="Hvor mange regner I med at blive?"type="tel" id="antal" />
           </div>
 
           <div class="form_felt">
             <label
               >HAR VI ADGANG TIL 230 WATT?
               <select name="mulighed">
-                <option value="">Ja/Nej</option>
+                <option value="">Ja / Nej</option>
                 <option value="nr. 1">Ja</option>
                 <option value="nr. 2">Nej</option>
               </select></label
@@ -138,6 +156,8 @@
               </select></label
             >
           </div>
+
+          <button type="submit">SEND FORESPØRGSEL</button>
         </form>
       </section>
     </main>
@@ -148,5 +168,6 @@
     </footer>
 
     <script src="login.js"></script>
+    <script src="/javascript/burger.js"></script>
   </body>
 </html>
