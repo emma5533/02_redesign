@@ -61,6 +61,7 @@ nav ul {
 .kryds {
   display: none;
 }
+
 .toggle_knap.open .menu {
   display: none;
 }
@@ -68,6 +69,7 @@ nav ul {
 .menu {
   display: block;
 }
+
 .toggle_knap.open .kryds {
   display: block;
 } 
