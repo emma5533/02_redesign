@@ -12,6 +12,9 @@
   margin-bottom: 2rem;
 }
 
+/* main {
+  background-image: url(/kaffebønner.png);
+} */
 body {
   width: 100%;
   /* background-image: url(/kaffeboenner.png);
@@ -62,5 +65,19 @@ footer {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 50%;
+    width: 50%;
+  }
+  .map-responsive iframe {
+    left: 10%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
