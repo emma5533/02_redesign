@@ -1,3 +1,7 @@
+main {
+  margin: 40px;
+}
+
 /*overskift layout*/
 .section_1 {
   display: grid;
@@ -12,6 +16,59 @@
 }
 .section_1 p {
   grid-column: 2/3;
+}
+
+/*kontaktformular*/
+.contact {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.form_felt {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  display: grid;
+  grid-column: 2/5;
+}
+
+.contact h1 {
+  grid-column: 2/5;
+  text-align: center;
+}
+
+.form_felt input {
+  border: black 2px solid;
+  padding: 5px;
+
+  font-family: roboto-mono, monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button {
+  grid-column: 2/5;
+  margin-top: 10px;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: #a5845a;
+}
+
+button:hover {
+  background: #a5845a;
+  color: white;
+  border: none;
 }
 
 /*media query*/
@@ -64,6 +121,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    margin-top: 2rem;
     margin-bottom: 3rem;
   }
 
@@ -74,6 +132,11 @@
 
     display: grid;
     grid-column: 2/5;
+  }
+
+  .contact h1 {
+    grid-column: 2/5;
+    text-align: center;
   }
 
   .form_felt input {
@@ -102,5 +165,6 @@
   button:hover {
     background: #a5845a;
     color: white;
+    border: none;
   }
 }
