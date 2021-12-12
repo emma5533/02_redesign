@@ -11,7 +11,6 @@
   padding-right: 6rem;
   padding-top: 4rem;
   padding-bottom: 8rem;
-  line-height: 2.8rem;
 }
 
 h1 {
@@ -22,4 +21,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   max-width: 100%;
+}
+.kaffeposer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 2rem;
+  gap: 2rem;
 }
