@@ -34,9 +34,8 @@ h1 {
 }
 p {
   font-family: neue-haas-grotesk-display, sans-serif;
-
+  max-width: 72ch;
   font-weight: 400;
-
   font-style: normal;
   font-size: 1.2rem;
   line-height: 2.2rem;
