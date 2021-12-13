@@ -17,9 +17,10 @@ img {
 /*MAIN GRID*/
 main {
   display: grid;
-
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-  margin-top: 30px;
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
 }
 main section {
   grid-column: 2/3;
@@ -78,7 +79,6 @@ footer {
 
 nav {
   background-color: #3b4029;
-  opacity: 90%;
 
   /*placering*/
   /*translate sørger for at nav'en hele tiden er der, men bare rykker sig ind og ud af viewport*/
@@ -129,6 +129,7 @@ nav ul {
   nav {
     width: 25%;
     justify-content: start;
+    opacity: 90%;
   }
 
   nav ul {
