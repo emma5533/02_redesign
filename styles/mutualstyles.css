@@ -8,6 +8,7 @@ body {
   max-width: 100%;
   background-size: 100%;
   background-repeat: repeat-y;
+  margin: 2rem;
 }
 img {
   display: block;
