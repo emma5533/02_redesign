@@ -77,7 +77,23 @@ footer {
   /*placerer knap(erne) foran navens baggrundsfarve*/
   z-index: 10;
 }
+.banner {
+  background: white;
+  width: 100%;
+  padding: 1.3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: flex;
+  justify-content: space-between;
+  flex-flow: wrap; */
+}
 
+/*overskiver mutual*/
+.banner a {
+  margin: 0;
+  padding: 0;
+}
 nav {
   background-color: #3b4029;
 
