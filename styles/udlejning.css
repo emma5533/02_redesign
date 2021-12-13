@@ -9,7 +9,29 @@ body {
   background-repeat: repeat-y;
 }
 
+.banner {
+  background: white;
+  width: 100%;
+  padding: 1.3rem;
+  position: fixed;
+  top: 0;
+  /* display: flex;
+  justify-content: space-between;
+  flex-flow: wrap; */
+}
+
+/*overskiver mutual*/
+.banner a {
+  margin: 0;
+  padding: 0;
+}
+
 /*overskift layout*/
+
+h1 {
+  z-index: 10;
+}
+
 .section_1 {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 600px) 1fr;
@@ -169,7 +191,7 @@ button:hover {
     color: #a5845a;
   }
 
-  button:hover {
+  .contact button:hover {
     background: #a5845a;
     color: white;
     border: none;
