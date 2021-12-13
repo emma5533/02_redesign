@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 iframe {
   width: 100%;
+  margin: auto;
 }
 .map {
   width: 100%;
@@ -8,7 +15,6 @@ iframe {
   margin-right: 2rem;
   padding-top: 60px;
   text-align: center;
-  padding-right: 6rem;
 }
 
 .maps {
@@ -16,17 +22,8 @@ iframe {
   margin-bottom: 2rem;
 }
 
-/* .map-responsive {
-  max-width: 100px;
-} */
-/* main {
-  background-image: url(/kaffebønner.png);
-} */
 body {
   width: 100%;
-  /* background-image: url(/kaffeboenner.png);
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 h3 {
@@ -60,17 +57,18 @@ h3 {
 .billed_pos {
   margin: 1rem;
   padding-top: 1rem;
+  text-align: center;
+}
+
+.billedstr {
+  height: 400px;
+  margin: auto;
 }
 
 footer {
   padding-top: 6rem;
 }
 
-/* .mellemrum {
-  padding-top: 1rem;
-  padding-left: 6rem;
-  font-weight: bold;
-} */
 .afstand {
   padding-top: 0.5rem;
   padding-left: 7rem;
@@ -79,24 +77,18 @@ footer {
 .rykind {
   text-align: center;
 }
+
 @media (min-width: 650px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .map-responsive {
-    overflow: hidden;
-    padding-bottom: 36.25%;
-    height: 100%;
-    width: 100%;
-  }
-  .map-responsive iframe {
-    left: 0%;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
+
   .afstand {
     padding-left: 7rem;
+  }
+  iframe {
+    width: 100%;
+    margin: auto;
   }
 }
