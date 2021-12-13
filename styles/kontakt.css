@@ -5,7 +5,7 @@
 }
 
 iframe {
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 .map {
@@ -22,6 +22,28 @@ iframe {
   margin-bottom: 2rem;
 }
 
+.map-responsive {
+  overflow: hidden;
+
+  padding-bottom: 56.25%;
+
+  position: relative;
+
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+
+  top: 0;
+
+  height: 100%;
+
+  width: 100%;
+
+  position: absolute;
+}
+
 body {
   width: 100%;
 }
@@ -33,11 +55,14 @@ h3 {
   font-style: normal;
   text-align: center;
 }
-
+h1 {
+  text-align: center;
+  grid-column: 2/3;
+}
 .kontakt {
   padding-top: 10px;
   text-align: center;
-  gap: 1rem;
+
   margin: 1rem;
   padding-top: 1rem;
 }
@@ -61,7 +86,7 @@ h3 {
 }
 
 .billedstr {
-  height: 400px;
+  height: auto;
   margin: auto;
 }
 
@@ -70,11 +95,11 @@ footer {
 }
 
 .afstand {
-  padding-top: 0.5rem;
-  padding-left: 7rem;
+  text-align: center;
 }
 
 .rykind {
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -85,7 +110,7 @@ footer {
   }
 
   .afstand {
-    padding-left: 7rem;
+    padding-left: 6rem;
   }
   iframe {
     width: 100%;
