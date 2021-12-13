@@ -33,6 +33,10 @@ h1 {
   font-style: normal;
   margin-bottom: 1.7rem;
 }
+h2 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 1.6rem;
+}
 p {
   font-family: neue-haas-grotesk-display, sans-serif;
   max-width: 60ch;
