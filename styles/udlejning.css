@@ -1,3 +1,4 @@
+/*indsætter background image*/
 body {
   background-image: url(/img/bodyimg.svg);
   max-width: 100%;
@@ -5,28 +6,12 @@ body {
   background-repeat: repeat-y;
 }
 
-.banner {
-  background: white;
-  width: 100%;
-  padding: 1.3rem;
-  position: fixed;
-  top: 0;
-  /* display: flex;
-  justify-content: space-between;
-  flex-flow: wrap; */
-}
-
-/*overskiver mutual*/
-.banner a {
-  margin: 0;
-  padding: 0;
-}
-
-/*overskift layout*/
+/*overskift udover nav*/
 h1 {
   z-index: 10;
 }
 
+/*introduktion layout*/
 .section_1 {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 600px) 1fr;
@@ -35,6 +20,7 @@ h1 {
   margin-top: 30px;
 }
 
+/*sat i grid, og placeres derfor i midten*/
 .section_1 h1 {
   grid-column: 2/3;
 }
@@ -42,23 +28,17 @@ h1 {
   grid-column: 2/3;
 }
 
-/*billeder i grid*/
-.img_1,
-.text_1 {
-  margin-bottom: 40px;
+/*mellemrum mellem billeder+tekst i mobil*/
+h2 {
+  margin-top: 0.5rem;
 }
 
-.img_2,
-.text_2 {
-  margin-bottom: 40px;
-}
-
-.img_3,
-.text_3 {
-  margin-bottom: 40px;
+p {
+  margin-bottom: 3rem;
 }
 
 /*kontaktformular*/
+/*placeres i main grid, og laver samtidigt sit eget grid*/
 .contact {
   grid-column: 2/3;
   display: grid;
@@ -67,21 +47,21 @@ h1 {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-
+/*overskiften til sektionen*/
+.contact h2 {
+  grid-column: 1/6;
+  text-align: center;
+}
+/*felternes font, og placeres i contacts grid*/
 .form_felt {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 600;
   font-style: normal;
 
   display: grid;
-  grid-column: 2/5;
+  grid-column: 1/6;
 }
-
-.contact h1 {
-  grid-column: 2/5;
-  text-align: center;
-}
-
+/*inputfelternes grå font, og en tyk border*/
 .form_felt input {
   border: black 2px solid;
   padding: 5px;
@@ -90,7 +70,7 @@ h1 {
   font-weight: 300;
   font-style: normal;
 }
-
+/*indsend knappens layput*/
 button {
   grid-column: 2/5;
   margin-top: 10px;
@@ -104,23 +84,28 @@ button {
   font-size: 1.3rem;
   color: #a5845a;
 }
-
-.contact button:hover {
+button:hover {
   background: #a5845a;
   color: white;
   border: none;
 }
 
+/*knappen i burgermenu skal ikke påvirkes af ovenstående*/
+.toggle_knap:hover {
+  background: none;
+}
+
 /*media query*/
 @media (min-width: 600px) {
+  /*først i web skal vi bruge grid*/
   .section_grid {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     margin-bottom: 20px;
   }
 
+  /*billeder+teksts placering i griddet*/
   .img_2 {
     grid-column: 2/3;
   }
@@ -141,6 +126,22 @@ button {
     grid-row: 4/5;
   }
 
+  /*billeder+tekst i grid, mellemrum imellem*/
+  .img_1,
+  .text_1 {
+    margin-bottom: 40px;
+  }
+
+  .img_2,
+  .text_2 {
+    margin-bottom: 40px;
+  }
+
+  .img_3,
+  .text_3 {
+    margin-bottom: 40px;
+  }
+
   /*formular layout*/
   .contact {
     grid-column: 2/3;
@@ -151,6 +152,7 @@ button {
     margin-bottom: 3rem;
   }
 
+  /*de små overskifters font og placering i contacts grid*/
   .form_felt {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 600;
@@ -159,12 +161,12 @@ button {
     display: grid;
     grid-column: 2/5;
   }
-
-  .contact h1 {
+  /*sektionens overskift*/
+  .contact h2 {
     grid-column: 2/5;
     text-align: center;
   }
-
+  /*inputfelternes grå font og tykke border*/
   .form_felt input {
     border: black 2px solid;
     padding: 5px;
@@ -173,7 +175,7 @@ button {
     font-weight: 300;
     font-style: normal;
   }
-
+  /*indsend knappens udseende*/
   button {
     grid-column: 2/5;
     margin-top: 10px;
