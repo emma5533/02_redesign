@@ -1,18 +1,16 @@
 .text {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding-top: 4rem;
-  padding-bottom: 8rem;
-  gap: 1.5rem;
-  justify-content: center;
+  margin: 2rem;
 }
 .text img {
   width: 100%;
+  padding: 2rem;
+}
+.kaffeposer img {
+  padding: 2rem;
 }
 h1 {
   margin-top: 3.2rem;
   text-align: center;
-  z-index: 20;
 }
 h2 {
   padding-bottom: 2.5rem;
@@ -21,11 +19,26 @@ h2 {
 p {
   justify-content: center;
 }
-.kaffeposer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column: 2/3;
-  gap: 4rem;
-  margin-bottom: 2rem;
-  margin-top: 1.6rem;
+
+/* alt dette er når det er i web*/
+@media (min-width: 600px) {
+  .text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .text img {
+    padding: 0;
+  }
+  .kaffeposer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2/3;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 1.6rem;
+  }
 }
