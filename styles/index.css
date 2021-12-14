@@ -25,21 +25,50 @@ body > * {
 }
 
 main {
+  /* background: red; */
   z-index: -1;
   display: grid;
 }
 
 main > * {
-  grid-area: 1 / 1;
+  grid-area: 1 /1/-1/-1;
+}
+/*knapper styling*/
+.links a {
+  color: #a5845a;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 .links {
+  margin-top: 8rem;
+  background-color: white;
+  border: black 1px solid;
+  padding-inline: 20px;
+  padding-block: 10px;
   z-index: 1;
   place-self: center;
 }
 
+/*hover*/
+.links:hover {
+  background: #a5845a;
+  border: none;
+}
+
+.links a:hover {
+  color: white;
+}
+
 footer {
   place-self: end center;
+}
+
+/*knappen i burgermenu skal ikke påvirkes af ovenstående*/
+.toggle_knap:hover {
+  background: none;
 }
 
 /* #videobackground {
@@ -70,84 +99,3 @@ video {
   bottom: 0;
   padding-bottom: 10px;
 } */
-
-.banner {
-  background-color: rgba(216, 191, 216, 0);
-}
-
-/*.toggle_knap {
-  /*fjerner hvordan en default knap ser ud
-  border: none;
-  background: transparent;
-
-  display: block;
-  min-width: 44px;
-  max-width: 65px;
-  min-height: 44px;
-  position: fixed;
-  top: 0;
-  right: 0;
-
-  /*placerer knap(erne) foran navens baggrundsfarve
-  z-index: 10;
-}
-
-nav {
-  background-color: thistle;
-
-  /*placering*/
-/*translate sørger for at nav'en hele tiden er der, men bare rykker sig ind og ud af viewport
-  transform: translateX(100%);
-  transition: 0.5s;
-  position: fixed; /*låser
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-
-  /*tekstens placering
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/*Når nav har class 'shown' skal den translate
-nav.shown {
-  transform: translateX(0);
-}
-
-nav ul {
-  display: flex;
-  flex-flow: column;
-}
-
-/*Normalt fylder den det hele, men i web fylder den kun lidt
-
-@media (min-width: 700px) {
-  nav {
-    width: 25%;
-    justify-content: start;
-  }
-
-  nav ul {
-    margin-top: 150px; /*eller hvad der passer
-  }
-}
-
-.kryds {
-  display: none;
-}
-
-.toggle_knap.open .menu {
-  display: none;
-}
-
-.menu {
-  display: block;
-}
-
-.toggle_knap.open .kryds {
-  display: block;
-} 
-*/
