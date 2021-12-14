@@ -2,6 +2,10 @@
   margin: 0%;
 }
 
+body {
+  background-image: unset;
+}
+
 #videobackground {
   display: grid;
 }
@@ -19,6 +23,17 @@ video {
   min-width: 100%;
   min-height: 100%;
   z-index: -10;
+  opacity: 0.9;
+}
+
+.foot {
+  text-align: center;
+  color: white;
+  margin-top: 50%;
+}
+
+.banner {
+  background-color: rgba(216, 191, 216, 0);
 }
 
 /*.toggle_knap {
