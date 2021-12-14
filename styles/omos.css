@@ -6,7 +6,7 @@
   padding: 2rem;
 }
 .kaffeposer img {
-  padding: 2rem;
+  padding: 0.2rem;
 }
 h1 {
   margin-top: 3.2rem;
@@ -38,8 +38,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column: 2/3;
-    gap: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 1.6rem;
   }
 }
