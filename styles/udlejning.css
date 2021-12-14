@@ -6,26 +6,45 @@ body {
   background-repeat: repeat-y;
 }
 
-/*overskift udover nav*/
+/*overskift*/
 h1 {
-  z-index: 10;
+  margin-top: 3.2rem;
+  text-align: center;
 }
 
 /*introduktion layout*/
 .section_1 {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 600px) 1fr;
-  text-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
+hr {
+  grid-column: 1/3;
+}
+
 /*sat i grid, og placeres derfor i midten*/
 .section_1 h1 {
-  grid-column: 2/3;
+  grid-column: 1/3;
 }
 .section_1 p {
-  grid-column: 2/3;
+  grid-column: 1/3;
+}
+
+/*linjer mellem tekst+billeder*/
+.hr_1 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.hr_2 {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.hr_3 {
+  grid-column: 1/3;
 }
 
 /*mellemrum mellem billeder+tekst i mobil*/
@@ -52,6 +71,11 @@ p {
   grid-column: 1/6;
   text-align: center;
 }
+
+.contact hr {
+  margin-top: 1.3rem;
+  grid-column: 1/6;
+}
 /*felternes font, og placeres i contacts grid*/
 .form_felt {
   font-family: neue-haas-grotesk-display, sans-serif;
@@ -70,8 +94,8 @@ p {
   font-weight: 300;
   font-style: normal;
 }
-/*indsend knappens layput*/
-button {
+/*indsend knappens layout*/
+.contact button {
   grid-column: 2/5;
   margin-top: 10px;
   background: white;
@@ -112,6 +136,7 @@ button:hover {
 
   .img_2 {
     grid-column: 2/3;
+    grid-row: 3/4;
   }
 
   .img_3 {
@@ -123,28 +148,28 @@ button:hover {
   }
 
   .text_2 {
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
 
   .text_4 {
-    grid-row: 4/5;
+    grid-row: 7/8;
   }
 
   /*billeder+tekst i grid, mellemrum imellem*/
-  .img_1,
+  /* .img_1,
   .text_1 {
     margin-bottom: 40px;
-  }
+  } */
 
-  .img_2,
+  /* .img_2,
   .text_2 {
     margin-bottom: 40px;
-  }
+  } */
 
-  .img_3,
+  /* .img_3,
   .text_3 {
     margin-bottom: 40px;
-  }
+  } */
 
   /*formular layout*/
   .contact {
@@ -178,25 +203,5 @@ button:hover {
     font-family: roboto-mono, monospace;
     font-weight: 300;
     font-style: normal;
-  }
-  /*indsend knappens udseende*/
-  button {
-    grid-column: 2/5;
-    margin-top: 10px;
-    background: white;
-    border: 1px solid black;
-    padding: 10px;
-
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.3rem;
-    color: #a5845a;
-  }
-
-  button:hover {
-    background: #a5845a;
-    color: white;
-    border: none;
   }
 }
