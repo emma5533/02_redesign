@@ -5,11 +5,11 @@
 }
 
 iframe {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 .map {
-  width: 90%;
+  width: 92%;
   grid-column: 2/3;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -38,10 +38,6 @@ iframe {
   position: absolute;
 }
 
-body {
-  width: 100%;
-}
-
 h3 {
   margin-bottom: 1rem;
   font-family: roboto-mono, monospace;
@@ -59,9 +55,9 @@ h1 {
 }
 
 .aabningstider {
-  margin: 1rem;
+  margin: 1.2rem;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   grid-column: 1/2;
 }
 
@@ -78,7 +74,7 @@ h1 {
 }
 
 .billedstr {
-  width: 90%;
+  width: 100%;
 }
 
 footer {
@@ -90,7 +86,7 @@ footer {
 }
 
 .rykind {
-  margin-top: 2rem;
+  margin-top: 1.3rem;
   text-align: center;
 }
 
@@ -99,9 +95,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+  .map {
+    padding-left: 3rem;
+  }
   .afstand {
-    padding-left: 6rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
   }
   iframe {
     width: 100%;
