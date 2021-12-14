@@ -49,6 +49,7 @@ h3 {
 h1 {
   text-align: center;
   grid-column: 2/3;
+  margin-top: 3.2rem;
 }
 .kontakt {
   padding-top: 2rem;
