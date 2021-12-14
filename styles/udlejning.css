@@ -32,10 +32,6 @@ hr {
   grid-column: 2/3;
 }
 
-div hr {
-  grid-column: 1/3;
-}
-
 /*mellemrum mellem billeder+tekst i mobil*/
 h2 {
   margin-top: 0.5rem;
@@ -78,8 +74,8 @@ p {
   font-weight: 300;
   font-style: normal;
 }
-/*indsend knappens layput*/
-button {
+/*indsend knappens layout*/
+.contact button {
   grid-column: 2/5;
   margin-top: 10px;
   background: white;
@@ -186,25 +182,5 @@ button:hover {
     font-family: roboto-mono, monospace;
     font-weight: 300;
     font-style: normal;
-  }
-  /*indsend knappens udseende*/
-  button {
-    grid-column: 2/5;
-    margin-top: 10px;
-    background: white;
-    border: 1px solid black;
-    padding: 10px;
-
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.3rem;
-    color: #a5845a;
-  }
-
-  button:hover {
-    background: #a5845a;
-    color: white;
-    border: none;
   }
 }
