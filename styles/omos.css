@@ -4,6 +4,7 @@
   padding-top: 4rem;
   padding-bottom: 8rem;
   gap: 1.5rem;
+  justify-content: center;
 }
 .text img {
   width: 100%;
@@ -17,11 +18,14 @@ h2 {
   padding-bottom: 2.5rem;
   text-align: center;
 }
-
+p {
+  justify-content: center;
+}
 .kaffeposer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column: 2/3;
   gap: 4rem;
   margin-bottom: 2rem;
+  margin-top: 1.6rem;
 }
