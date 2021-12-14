@@ -4,20 +4,13 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background-image: unset;
-} */
-
-/* body{
-} */
-
 p {
   font-style: italic;
   font-size: 1rem;
 }
 
-h1{
-  padding-top: 12px;
+h1 {
+  padding-top: 24px;
 }
 
 h2,
@@ -32,9 +25,9 @@ section {
   gap: 0.5rem;
   max-width: 60ch;
   margin-inline: auto;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(135deg, rgb(247, 243, 233), rgb(247, 243, 233)));
+  background: linear-gradient(135deg, rgb(247, 243, 233), rgb(247, 243, 233));
 }
 
 dl {
