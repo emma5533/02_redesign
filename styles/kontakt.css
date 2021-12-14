@@ -13,8 +13,9 @@ iframe {
   grid-column: 2/3;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-top: 60px;
+  padding-top: 2rem;
   text-align: center;
+  z-index: -10;
 }
 
 .maps {
@@ -24,23 +25,16 @@ iframe {
 
 .map-responsive {
   overflow: hidden;
-
   padding-bottom: 56.25%;
-
   position: relative;
-
   height: 0;
 }
 
 .map-responsive iframe {
   left: 0;
-
   top: 0;
-
   height: 100%;
-
   width: 100%;
-
   position: absolute;
 }
 
@@ -67,7 +61,7 @@ h1 {
 .aabningstider {
   margin: 1rem;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   grid-column: 1/2;
 }
 
@@ -76,7 +70,7 @@ h1 {
   grid-column: 1/2;
   grid-row: 2;
   margin: auto;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .billed_pos {
   padding-top: 1rem;
