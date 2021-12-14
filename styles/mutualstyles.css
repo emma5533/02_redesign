@@ -3,6 +3,9 @@
 
   margin: 0;
 }
+hr {
+  color: #3b4029;
+}
 
 /*BURGERMENU CSS*/
 
@@ -174,10 +177,10 @@ h4 {
   font-style: normal;
 }
 footer {
+  grid-column: 2/3;
   font-family: roboto-mono, monospace;
-
   font-weight: 300;
-
+  margin: 3rem;
   font-style: normal;
   text-align: center;
 }
