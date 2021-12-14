@@ -28,7 +28,7 @@ iframe {
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
-  border: 2px groove rgb(155, 149, 149);
+  border: 1px groove #3b4029;
 }
 
 .map-responsive iframe {
