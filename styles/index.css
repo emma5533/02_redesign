@@ -63,6 +63,7 @@ main > * {
 }
 
 footer {
+  margin: 0;
   place-self: end center;
 }
 
