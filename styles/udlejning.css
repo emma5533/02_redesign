@@ -106,6 +106,10 @@ button:hover {
   }
 
   /*billeder+teksts placering i griddet*/
+  h2 {
+    margin-top: 0;
+  }
+
   .img_2 {
     grid-column: 2/3;
   }
