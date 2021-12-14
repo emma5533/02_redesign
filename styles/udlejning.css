@@ -28,6 +28,14 @@ h1 {
   grid-column: 2/3;
 }
 
+hr {
+  grid-column: 2/3;
+}
+
+div hr {
+  grid-column: 1/3;
+}
+
 /*mellemrum mellem billeder+tekst i mobil*/
 h2 {
   margin-top: 0.5rem;
