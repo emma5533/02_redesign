@@ -3,6 +3,7 @@
 
   margin: 0;
 }
+
 /*BURGERMENU CSS*/
 
 .toggle_knap {
@@ -21,6 +22,10 @@
   /*placerer knap(erne) foran navens baggrundsfarve*/
   z-index: 10;
 }
+button {
+  padding: 0.6rem;
+}
+
 .banner {
   background: white;
   width: 100%;
