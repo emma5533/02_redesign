@@ -5,14 +5,14 @@
 }
 
 iframe {
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 .map {
-  width: 100%;
+  width: 90%;
   grid-column: 2/3;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding-top: 2rem;
   text-align: center;
   z-index: -10;
@@ -78,8 +78,7 @@ h1 {
 }
 
 .billedstr {
-  height: auto;
-  margin: auto;
+  width: 90%;
 }
 
 footer {
