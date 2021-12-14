@@ -29,6 +29,7 @@ p {
     padding-bottom: 7rem;
     gap: 1.5rem;
     justify-content: center;
+    line-height: 1.5rem;
   }
   .text img {
     padding: 0;
