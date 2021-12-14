@@ -3,6 +3,22 @@
   box-sizing: border-box;
 }
 
+/*socials ikoner*/
+nav img {
+  width: 80%;
+}
+
+.ikoner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ikoner a:hover {
+  opacity: 50%;
+}
+
+/*HERTIL*/
+
 video {
   width: 100%;
   height: 100%;
