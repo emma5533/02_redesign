@@ -1,11 +1,26 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 h1 {
+  grid-column: 1/6;
   margin-top: 3.2rem;
   text-align: center;
 }
 
+hr {
+  grid-column: 1/6;
+}
+
 h4 {
+  grid-column: 1/6;
   font-size: 1.3rem;
   margin-bottom: 0.6rem;
+}
+
+.scooter {
+  grid-column: 2/5;
 }
 
 footer {
@@ -29,7 +44,7 @@ footer {
 
 .link {
   grid-column: 3/4;
-  margin-top: 3rem;
+  margin-top: 1rem;
   background-color: white;
   border: black 1px solid;
   padding-inline: 10px;
