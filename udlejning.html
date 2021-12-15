@@ -6,36 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="icon" type="image/svg+xml" href="/img/lagonifavikon.svg" />
-    <link rel="stylesheet" href="https://use.typekit.net/ufg1koj.css" /> 
+    <link rel="stylesheet" href="https://use.typekit.net/ufg1koj.css" />
     <link rel="stylesheet" href="./styles/mutualstyles.css" />
     <link rel="stylesheet" href="./styles/udlejning.css" />
     <title>Lagoni Redesign</title>
   </head>
   <body>
     <header class="banner">
-        <div class="logo">
-          <a href="index.html"> <img src="/img/navlogo.svg" alt="" width="44mm"></a>
-        </div>
-       <nav>
-         <ul>
-           <li><a href="index.html">FORSIDE</a></li>
-           <li><a href="menu.html">MENU</a></li>
-           <li><a href="udlejning.html">UDLEJNING</a></li>
-           <li><a href="omos.html">OM OS</a></li>
-           <li><a href="kontakt.html">KONTAKT</a></li>
-          </ul>
-       </nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="/img/navlogo.svg" alt="" width="60"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="udlejning.html">UDLEJNING</a></li>
+          <li><a href="omos.html">OM OS</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          <div class="ikoner">
+            <li>
+              <a href="https://www.facebook.com/lagonikaffebar/"
+                ><img src="/img/facebook-round-line.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/lagonikaffebar/"
+                ><img src="/img/instagram-round-line.svg" alt=""
+              /></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
 
-       <button class="toggle_knap">
-         <img class="knap kryds" src="./img/kryds_burger.svg" alt="kryds" />
-         <img class="knap menu" src="./img/menu_burger.svg" alt="menu" />
-       </button>
+      <button class="toggle_knap">
+        <img class="knap kryds" src="./img/kryds_burger.svg" alt="kryds" />
+        <img class="knap menu" src="./img/menu_burger.svg" alt="menu" />
+      </button>
     </header>
 
     <main>
       <section class="section_1">
         <h1>UDLEJNING</h1>
-        <hr>
+        <hr />
         <p>
           Skal du afholde et arrangement? Lagoni Kaffebar står til rådighed,
           uanset om du holder havefest, firmaevent, fernisering, møde,
@@ -45,7 +59,6 @@
           prisforslag. Vi glæder os til at høre fra dig!
         </p>
       </section>
-    
 
       <section class="section_grid">
         <figure class="img_1">
@@ -61,7 +74,7 @@
             arrangementer af alle arter.
           </p>
         </div>
-        <hr class="hr_1">
+        <hr class="hr_1" />
         <figure class="img_2">
           <img src="./img/fiat_edit.jpg" alt="img2" />
         </figure>
@@ -73,7 +86,7 @@
             friskbrygget kaffe direkte fra bagagerummet til dig og dine gæster.
           </p>
         </div>
-        <hr class="hr_2">
+        <hr class="hr_2" />
         <figure class="img_3">
           <img src="./img/pandekage_edit.jpg" alt="img3" />
         </figure>
@@ -91,7 +104,7 @@
             begivenheder.
           </p>
         </div>
-        <hr class="hr_3">
+        <hr class="hr_3" />
         <figure class="img_4">
           <img src="./img/popup_edit.jpg" alt="img4" />
         </figure>
@@ -100,82 +113,105 @@
           <p>
             Skal du holde et større event, og vil gerne tilbyde god kaffe til
             dine gæster? Du har mulighed for at leje vores pop-up café, som
-            stortrives i store selskaber. Vi medbringer alt!
-            Vi har før stået på Folkemødet og på Søfartsmuseet i Helsingør med
-            vores pop-up mini café.
+            stortrives i store selskaber. Vi medbringer alt! Vi har før stået på
+            Folkemødet og på Søfartsmuseet i Helsingør med vores pop-up mini
+            café.
           </p>
         </div>
-        </section>
-
-        <form action="/tak.html" class="contact" name="contact" netlify>
-          <h2>KONTAKTFORMULAR</h2>
-          <hr>
-          <div class="form_felt">
-            <label for="navn">NAVN</label>
-            <input placeholder="Her skriver du navn og efternavn.." type="text" id="navn" />
-          </div>
-
-          <div class="form_felt">
-            <label for="mail">E-MAIL</label>
-            <input placeholder="Her skriver du din e-mail.."type="email" id="mail" />
-          </div>
-
-          <div class="form_felt">
-            <label for="dato">DATO DD.MM.YY</label>
-            <input placeholder="F.eks. 28.12.22"type="decimal" id="dato" />
-          </div>
-
-          <div class="form_felt">
-            <label for="tidsrum">CA. TIDSRUM 00.00 - 00.00 </label>
-            <input placeholder="F.eks. 15.00 - 18.30"type="decimal" id="tidsrum" />
-          </div>
-
-          <div class="form_felt">
-            <label for="adresse">ADRESSE</label>
-            <input placeholder="Her skriver du adresse og postnummer.."type="text" id="adresse" />
-          </div>
-
-          <div class="form_felt">
-            <label for="anledning">ANLEDNING</label>
-            <input placeholder="I hvilken anledning afholdes arrangementet?"type="text" id="anledning" />
-          </div>
-
-          <div class="form_felt">
-            <label for="antal">CA. ANTAL PERSONER</label>
-            <input placeholder="Hvor mange regner I med at blive?"type="tel" id="antal" />
-          </div>
-
-          <div class="form_felt">
-            <label
-              >HAR VI ADGANG TIL 230 WATT?
-              <select name="mulighed">
-                <option value="">Ja / Nej</option>
-                <option value="nr. 1">Ja</option>
-                <option value="nr. 2">Nej</option>
-              </select></label
-            >
-          </div>
-
-          <div class="form_felt">
-            <label
-              >TYPE ENHED DU FORESPØRGER
-              <select name="mulighed">
-                <option value="">Vælg her</option>
-                <option value="nr. 1">Kaffe-scooter</option>
-                <option value="nr. 2">Fiat Mokka</option>
-                <option value="nr. 2">Pop-up café</option>
-                <option value="nr. 2">Pandekagecykel</option>
-              </select></label
-            >
-          </div>
-
-          <button type="submit">SEND FORESPØRGSEL <a href="tak.html"></a></button>
-        </form>
       </section>
+
+      <form action="/tak.html" class="contact" name="contact" netlify>
+        <h2>KONTAKTFORMULAR</h2>
+        <hr />
+        <div class="form_felt">
+          <label for="navn">NAVN</label>
+          <input
+            placeholder="Her skriver du navn og efternavn.."
+            type="text"
+            id="navn"
+          />
+        </div>
+
+        <div class="form_felt">
+          <label for="mail">E-MAIL</label>
+          <input
+            placeholder="Her skriver du din e-mail.."
+            type="email"
+            id="mail"
+          />
+        </div>
+
+        <div class="form_felt">
+          <label for="dato">DATO DD.MM.YY</label>
+          <input placeholder="F.eks. 28.12.22" type="number" id="dato" />
+        </div>
+
+        <div class="form_felt">
+          <label for="tidsrum">CA. TIDSRUM 00.00 - 00.00 </label>
+          <input
+            placeholder="F.eks. 15.00 - 18.30"
+            type="number"
+            id="tidsrum"
+          />
+        </div>
+
+        <div class="form_felt">
+          <label for="adresse">ADRESSE</label>
+          <input
+            placeholder="Her skriver du adresse og postnummer.."
+            type="text"
+            id="adresse"
+          />
+        </div>
+
+        <div class="form_felt">
+          <label for="anledning">ANLEDNING</label>
+          <input
+            placeholder="I hvilken anledning afholdes arrangementet?"
+            type="text"
+            id="anledning"
+          />
+        </div>
+
+        <div class="form_felt">
+          <label for="antal">CA. ANTAL PERSONER</label>
+          <input
+            placeholder="Hvor mange regner I med at blive?"
+            type="tel"
+            id="antal"
+          />
+        </div>
+
+        <div class="form_felt">
+          <label
+            >HAR VI ADGANG TIL 230 WATT?
+            <select name="mulighed">
+              <option value="">Ja / Nej</option>
+              <option value="nr. 1">Ja</option>
+              <option value="nr. 2">Nej</option>
+            </select></label
+          >
+        </div>
+
+        <div class="form_felt">
+          <label
+            >TYPE ENHED DU FORESPØRGER
+            <select name="mulighed">
+              <option value="">Vælg her</option>
+              <option value="nr. 1">Kaffe-scooter</option>
+              <option value="nr. 2">Fiat Mokka</option>
+              <option value="nr. 2">Pop-up café</option>
+              <option value="nr. 2">Pandekagecykel</option>
+            </select></label
+          >
+        </div>
+
+        <button type="submit">SEND FORESPØRGSEL</button>
+      </form>
     </main>
 
     <footer>
-      Lagoni Kaffebar / +45 22 49 42 49 / Simon Spies Plads 3 / 3000 Helsingør 
+      Lagoni Kaffebar / +45 22 49 42 49 / Simon Spies Plads 3 / 3000 Helsingør
     </footer>
 
     <script src="login.js"></script>
