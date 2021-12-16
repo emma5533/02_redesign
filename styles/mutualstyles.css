@@ -91,6 +91,19 @@ nav ul {
   list-style: none;
   gap: 5rem;
 }
+/*socials ikoner*/
+nav img {
+  width: 80%;
+}
+
+.ikoner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ikoner a:hover {
+  opacity: 50%;
+}
 
 /*Normalt fylder den det hele, men i web fylder den kun lidt*/
 
